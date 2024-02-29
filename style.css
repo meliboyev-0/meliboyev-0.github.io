@@ -66,7 +66,7 @@ header nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background-color: rgba(247, 63, 1, 255);
+    background-color: rgb(167, 106, 15);
     margin: auto;
     display: block;
 }
@@ -77,7 +77,7 @@ header nav ul li a:hover::after {
 }
 
 header nav ul li a:hover {
-    color: rgba(247, 63, 1, 255);
+    color: rgb(252, 188, 60);
 }
 
 header .header_menu {
@@ -159,8 +159,8 @@ header .header_menu .img_me img {
 }
 
 .tech {
-    display: grid;
-    grid-column: 3;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 1920px;
     margin-top: 100px
 }
@@ -205,19 +205,11 @@ header .header_menu .img_me img {
 }
 
 .about_me {
-    display: flex;
+    width: 100%;
     background: linear-gradient(135.29deg, rgb(65, 65, 65) 0%, rgb(45, 45, 45) 100.546%);
     margin-top: 165px;
     padding-top: 35px;
     padding-bottom: 50px;
-}
-
-.about_me .right_pictures img {
-    margin-left: 200px;
-    margin-top: 197px;
-    display: block;
-    width: 272px;
-    height: 320px;
 }
 
 .about_me_text {
@@ -230,7 +222,7 @@ header .header_menu .img_me img {
 
 .about_me_text p {
     margin-top: 50px;
-    margin-left: 25px;
+    margin: auto;
     margin-bottom: 20px;
     max-width: 370px;
     max-height: 696px;
@@ -240,6 +232,7 @@ header .header_menu .img_me img {
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 1%;
+    padding-bottom: 25px;
 }
 
 
@@ -259,8 +252,8 @@ header .header_menu .img_me img {
 }
 
 .portfolio .circle {
-    width: 60px;
-    height: 60px;
+    max-width: 60px;
+    max-height: 60px;
     background: linear-gradient(135.00deg, rgb(226, 163, 0) 0%, rgb(226, 149, 0) 100%);
     border-radius: 100%;
 }
@@ -278,6 +271,8 @@ header .header_menu .img_me img {
 
 .portfolio_blok {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 150px;
     border-radius: 29px;
@@ -288,35 +283,33 @@ header .header_menu .img_me img {
 }
 
 .portfolio_blok img {
+    width: 100%;
     border-radius: 25px;
-    margin-left: 30px;
     margin-top: 25px;
-    width: 443px;
-    height: 409px;
+    margin: auto;
+    max-width: 443px;
+    max-height: 409px;
 }
 
 .portfolio_blok h3 {
-    margin-top: 82px;
+    margin: auto;
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: Arodora Pro;
     font-size: 24px;
     font-weight: 300;
     line-height: 29px;
-    letter-spacing: 0%;
+
 }
 
 .portfolio_blok p {
-    margin-top: 25px;
-    margin-left: 50px;
-    width: 296px;
-    height: 336px;
+    max-width: 296px;
+    max-height: 336px;
     color: rgb(145, 145, 145);
     font-family: Arodora Pro;
     font-size: 18px;
     font-weight: 300;
     line-height: 21px;
-    text-align: center;
 }
 
 .portfolio_blok p a {
@@ -327,6 +320,10 @@ header .header_menu .img_me img {
     line-height: 21px;
     letter-spacing: 0%;
 
+}
+.portfolio_text {
+    margin: auto;
+    text-align: center;
 }
 
 footer {
@@ -344,6 +341,7 @@ footer .footer_div {
 }
 
 footer .footer_div h3 a {
+    padding: auto;
     color: rgb(228, 228, 228);
     font-family: Arodora Pro;
     font-size: 18px;
