@@ -155,7 +155,7 @@ header .header_menu .img_me img {
     font-size: 40px;
     text-align: center;
     padding-top: 50px;
-    color: rgb(48, 189, 240);
+    color: rgb(5, 72, 255);
 }
 
 .tech {
@@ -179,7 +179,7 @@ header .header_menu .img_me img {
 }
 
 .two_page .technology h3 {
-    color: rgb(228, 228, 228);
+    color: rgb(10, 109, 190);
     font-family: Arodora Pro;
     font-size: 24px;
     font-weight: 300;
@@ -191,7 +191,7 @@ header .header_menu .img_me img {
     content: '';
     height: 270px;
     width: 270px;
-    border: 2px solid red;
+    border: 2px solid rgb(104, 5, 134);
     border-radius: 29px;
     z-index: 1;
     transition: 0.3s;
